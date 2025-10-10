@@ -1,141 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miguel Freitas | Personal Page</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background: #f4f4f4;
-            color: #333;
-        }
-        .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-            background: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        header {
-            text-align: center;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: #2c3e50;
-        }
-        header p {
-            margin: 5px 0 0;
-            font-size: 1.2em;
-            color: #7f8c8d;
-        }
-        section {
-            margin-bottom: 30px;
-        }
-        h2 {
-            font-size: 1.8em;
-            color: #2980b9;
-            border-bottom: 2px solid #2980b9;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            background: #ecf0f1;
-            margin-bottom: 10px;
-            padding: 15px;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-        ul li:hover {
-            background: #bdc3c7;
-        }
-        a {
-            color: #2980b9;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 2px solid #eee;
-            font-size: 0.9em;
-            color: #95a5a6;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Miguel Freitas | Personal Page</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <div class="container">
+    <header>
+      <h1>Miguel Freitas</h1>
+      <p>Master's Student in Computer Science at UFF</p>
+      <nav>
+        <a href="index.html">Home</a> |
+        <a href="projects.html">Projects</a> |
+        <a href="publications.html">Publications</a> |
+        <a href="mailto:miguel_flj@id.uff.br">Contact</a>
+      </nav>
+    </header>
 
-    <div class="container">
-        <header>
-            <h1>Miguel Freitas</h1>
-            <p>Master's Student in Computer Science at UFF</p>
-        </header>
+    <main>
+      <section id="about">
+        <h2>About Me</h2>
+        <p>
+          I am a Master's student in Computer Science at the
+          <strong>Universidade Federal Fluminense (UFF)</strong>,
+          advised by <a href="#">Prof. Lúcia Drummond</a>. My current
+          research focuses on optimizing resource management for
+          High-Performance Computing (HPC) applications running on
+          Kubernetes, specifically exploring strategies for efficient
+          resource resizing.
+        </p>
+        <p>
+          I am also a scholarship researcher in collaboration with
+          <strong>Petrobras</strong>, working on a project focused on
+          <em>cloud cost optimization for high-performance computing
+          workloads</em>. I develop performance analyses, resource scaling
+          strategies, and compute–cost trade-off evaluations.
+        </p>
+      </section>
 
-        <main>
-            <section id="about">
-                <h2>About Me</h2>
-                <p>
-                    I am a Master's student in Computer Science at the <strong>Universidade Federal Fluminense (UFF)</strong>, advised by <a href="#">Prof. Lúcia Drummond</a>. My current research focuses on optimizing resource management for High-Performance Computing (HPC) applications running on Kubernetes, specifically exploring strategies for efficient resource resizing.
-                </p>
-                <p>
-                    In addition to my academic work, I am actively involved in a collaborative HPC project with <strong>Petrobras</strong>, where I work on developing strategies to optimize cloud costs and performance for large-scale computational workloads.
-                </p>
-            </section>
+      <hr />
 
-            <hr>
+      <section id="interests">
+        <h2>Research & Interests</h2>
+        <ul>
+          <li>High-Performance Computing (HPC)</li>
+          <li>Kubernetes & Cloud-Native Technologies</li>
+          <li>Resource Management and Scheduling</li>
+          <li>Cloud Cost Optimization & Performance</li>
+          <li>Container Checkpoint/Restore (CRIU)</li>
+        </ul>
+      </section>
 
-            <section id="interests">
-                <h2>Research & Interests</h2>
-                <ul>
-                    <li>High-Performance Computing (HPC)</li>
-                    <li>Kubernetes & Cloud-Native Technologies</li>
-                    <li>Resource Management and Scheduling</li>
-                    <li>Cloud Cost Optimization & Performance</li>
-                    <li>Container Checkpoint/Restore (CRIU)</li>
-                </ul>
-            </section>
-            
-            <hr>
+      <hr />
 
-            <section id="news">
-                <h2>News & Events</h2>
-                <ul>
-                    <li><strong>November 2025</strong>: I will be visiting research collaborators in Bordeaux, France. 🇫🇷</li>
-                    <li><strong>November 2025</strong>: Honored to be selected as a Student Volunteer for <a href="https://sc25.supercomputing.org/" target="_blank">Supercomputing 2025 (SC25)</a> in St. Louis, Missouri. 💻</li>
-                </ul>
-            </section>
+      <section id="news">
+        <h2>News & Events</h2>
+        <ul>
+          <li><strong>November 2025</strong>: I will be visiting research collaborators in Bordeaux, France. 🇫🇷</li>
+          <li><strong>November 2025</strong>: Selected as a Student Volunteer for 
+            <a href="https://sc25.supercomputing.org/" target="_blank">Supercomputing 2025 (SC25)</a> in St. Louis, Missouri. 💻
+          </li>
+        </ul>
+      </section>
+    </main>
 
-            <hr>
-
-            <section id="contact">
-                <h2>Contact & Links</h2>
-                <ul>
-                    <li><strong>Email</strong>: <a href="mailto:miguel_flj@id.uff.br">miguel_flj@id.uff.br</a></li>
-                    <li><strong>GitHub</strong>: <a href="https://github.com/migueluff" target="_blank">migueluff</a></li>
-                    <li><strong>LinkedIn</strong>: <a href="https://www.linkedin.com/in/miguel-freitas-de-lima-junior-4707a4201" target="_blank">My linkedIn profile</a></li>
-                </ul>
-            </section>
-        </main>
-
-        <footer>
-            <p>&copy; 2025 Miguel Freitas. All rights reserved.</p>
-        </footer>
-    </div>
-
+    <footer>
+      <p>&copy; 2025 Miguel Freitas. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
